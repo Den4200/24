@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ConfettiSwiftUI",
+        "repositoryURL": "https://github.com/simibac/ConfettiSwiftUI.git",
+        "state": {
+          "branch": null,
+          "revision": "cab01453f51c70f18727a7607e80fe90e08c4218",
+          "version": null
+        }
+      },
+      {
+        "package": "MathExpression",
+        "repositoryURL": "https://github.com/peredaniel/MathExpression.git",
+        "state": {
+          "branch": null,
+          "revision": "12828f309761061d3842ab016a77977248983a26",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "RegEx",
+        "repositoryURL": "https://github.com/eneko/RegEx.git",
+        "state": {
+          "branch": null,
+          "revision": "9256825ff3a4f0edcf293461dfad4e8578eb6b2f",
+          "version": "0.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

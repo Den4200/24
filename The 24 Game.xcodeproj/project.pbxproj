@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		832AC01727FDCF57002E7087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832AC01627FDCF57002E7087 /* Assets.xcassets */; };
 		832AC01A27FDCF57002E7087 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832AC01927FDCF57002E7087 /* Preview Assets.xcassets */; };
 		832AC01D27FDCF57002E7087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832AC01B27FDCF57002E7087 /* LaunchScreen.storyboard */; };
+		832AC02727FDD28D002E7087 /* MathExpression in Frameworks */ = {isa = PBXBuildFile; productRef = 832AC02627FDD28D002E7087 /* MathExpression */; };
+		832AC02A27FDD38F002E7087 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832AC02927FDD38F002E7087 /* Extensions.swift */; };
+		832AC02E27FDDA8A002E7087 /* RegEx in Frameworks */ = {isa = PBXBuildFile; productRef = 832AC02D27FDDA8A002E7087 /* RegEx */; };
+		832AC03127FF2170002E7087 /* Problems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832AC03027FF2170002E7087 /* Problems.swift */; };
+		83361D3B2800763F00602745 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 83361D3A2800763F00602745 /* ConfettiSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,8 @@
 		832AC01927FDCF57002E7087 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		832AC01C27FDCF57002E7087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		832AC01E27FDCF57002E7087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832AC02927FDD38F002E7087 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		832AC03027FF2170002E7087 /* Problems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83361D3B2800763F00602745 /* ConfettiSwiftUI in Frameworks */,
+				832AC02E27FDDA8A002E7087 /* RegEx in Frameworks */,
+				832AC02727FDD28D002E7087 /* MathExpression in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,8 @@
 				832AC01027FDCF54002E7087 /* AppDelegate.swift */,
 				832AC01227FDCF54002E7087 /* SceneDelegate.swift */,
 				832AC01427FDCF54002E7087 /* ContentView.swift */,
+				832AC03027FF2170002E7087 /* Problems.swift */,
+				832AC02927FDD38F002E7087 /* Extensions.swift */,
 				832AC01627FDCF57002E7087 /* Assets.xcassets */,
 				832AC01B27FDCF57002E7087 /* LaunchScreen.storyboard */,
 				832AC01E27FDCF57002E7087 /* Info.plist */,
@@ -91,6 +103,11 @@
 			dependencies = (
 			);
 			name = "The 24 Game";
+			packageProductDependencies = (
+				832AC02627FDD28D002E7087 /* MathExpression */,
+				832AC02D27FDDA8A002E7087 /* RegEx */,
+				83361D3A2800763F00602745 /* ConfettiSwiftUI */,
+			);
 			productName = "The 24 Game";
 			productReference = 832AC00D27FDCF54002E7087 /* The 24 Game.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +135,11 @@
 				Base,
 			);
 			mainGroup = 832AC00427FDCF54002E7087;
+			packageReferences = (
+				832AC02527FDD28D002E7087 /* XCRemoteSwiftPackageReference "MathExpression" */,
+				832AC02C27FDDA8A002E7087 /* XCRemoteSwiftPackageReference "RegEx" */,
+				83361D392800763F00602745 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = 832AC00E27FDCF54002E7087 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,8 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				832AC01127FDCF54002E7087 /* AppDelegate.swift in Sources */,
+				832AC03127FF2170002E7087 /* Problems.swift in Sources */,
 				832AC01327FDCF54002E7087 /* SceneDelegate.swift in Sources */,
 				832AC01527FDCF54002E7087 /* ContentView.swift in Sources */,
+				832AC02A27FDD38F002E7087 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +367,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		832AC02527FDD28D002E7087 /* XCRemoteSwiftPackageReference "MathExpression" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/peredaniel/MathExpression.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		832AC02C27FDDA8A002E7087 /* XCRemoteSwiftPackageReference "RegEx" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eneko/RegEx.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+		83361D392800763F00602745 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = revision;
+				revision = cab01453f51c70f18727a7607e80fe90e08c4218;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		832AC02627FDD28D002E7087 /* MathExpression */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 832AC02527FDD28D002E7087 /* XCRemoteSwiftPackageReference "MathExpression" */;
+			productName = MathExpression;
+		};
+		832AC02D27FDDA8A002E7087 /* RegEx */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 832AC02C27FDDA8A002E7087 /* XCRemoteSwiftPackageReference "RegEx" */;
+			productName = RegEx;
+		};
+		83361D3A2800763F00602745 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83361D392800763F00602745 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 832AC00527FDCF54002E7087 /* Project object */;
 }
