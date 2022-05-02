@@ -112,6 +112,8 @@ struct ContentView: View {
                                 .font(.title3)
                                 .padding()
                                 .border(Color.black, width: 2, cornerRadius: 16)
+                                .disableAutocorrection(true)
+                                .keyboardType(.numbersAndPunctuation)
                         }
 
                         Spacer()
